@@ -1,0 +1,22 @@
+1.SONUN CEVABI
+
+SELECT rating,COUNT(*)  FROM film
+GROUP BY rating;
+
+2.sorunun cevabı
+
+SELECT replacement_cost,COUNT(*)  FROM film
+GROUP BY replacement_cost
+HAVING COUNT(*) > 50;
+
+3.SORUNUN CEVABI
+
+SELECT store_id,COUNT(*) FROM customer
+GROUP BY store_id;
+
+4.SORUNUNU CEVABI
+SELECT country_id,COUNT(*) FROM city
+GROUP BY country_id
+ORDER BY country_id DESC
+LIMIT 1;
+
